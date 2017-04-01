@@ -5,7 +5,7 @@ import {isEven} from '../../src/js/util/num';
 let arrTest = [1,2,3,4,5,6];
 
 /**
- * arr.chunk(array, size)
+ * @function arr.chunk(array, size)
  */
 describe('tests for array#chunk', () => {
 
@@ -25,6 +25,10 @@ describe('tests for array#chunk', () => {
   });
 });
 
+
+/**
+ * @function arr.weave
+ */
 describe('tests for array#weave', () => {
 
   test('array weave basic', () => {
