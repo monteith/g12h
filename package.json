@@ -1,5 +1,5 @@
 {
-  "name": "g18n",
+  "name": "g12h",
   "version": "1.0.0",
   "description": "Set of tools Graham uses for development",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monteith/g18n.git"
+    "url": "git+https://github.com/monteith/g12h.git"
   },
   "keywords": [
     "tools",
@@ -17,7 +17,7 @@
   "author": "Graham Monteith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/monteith/g18n/issues"
+    "url": "https://github.com/monteith/g12h/issues"
   },
-  "homepage": "https://github.com/monteith/g18n#readme"
+  "homepage": "https://github.com/monteith/g12h#readme"
 }
