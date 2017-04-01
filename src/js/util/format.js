@@ -76,3 +76,5 @@ const phone = (number, trim = true) => {
 
   return result;
 };
+
+export {time, percent, currency, phone};
