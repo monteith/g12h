@@ -100,4 +100,4 @@ const moveBy = (arr, from, by = 1) => {
 };
 
 
-export {chunk, weave, equalish};
+export {chunk, weave, equalish, move, moveBy};
