@@ -1,4 +1,4 @@
-import {StrUtil} from '../global/util';
+import {bytes} from '../util/str';
 
 /**
  * Module to store data as json in a single cookie.
@@ -15,7 +15,7 @@ class Cookie {
 
   /**
    * Retrieve value from JSON object store in the cookie.
-   * scope and persistId are concatinated to form the property name of
+   * scope and persistId are concatenated to form the property name of
    * the value to retrieve.
    * @param {string} scope - Scope of the value.
    * @param {string} persistId - Id of the value.
@@ -30,11 +30,19 @@ class Cookie {
     return value;
   }
 
+  /**
+   * Set cookie as stringified JSON object
+   * Scope and persistId are concatenated to form the property name
+   *
+   * @param {string} scope
+   * @param {string} persistId
+   * @param {string} value
+   */
   set(scope, persistId, value) {
     let c = this._c.getJSON(this._name) || {};
     c[`${scope}-${persistId}`] = value;
     let stringified = JSON.stringify(c);
-    let bytes = StrUtil.bytes(stringified);
+    let bytes = bytes(stringified);
     if (bytes >= this._max)
       console.error(`Cookie set failed: cookie length (${bytes} bytes) exceeds max (${_max} bytes) `)
     else
