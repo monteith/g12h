@@ -24,7 +24,7 @@ const randomInt = (min, max) => Math.floor(random(min, max));
  * Is an even number?
  * @param n
  */
-const isEven = (n) => n == parseFloat(n) ? !(n%2) : void 0;
+const isEven = (n) => n === parseFloat(n) ? !(n%2) : void 0;
 
 
 /**
